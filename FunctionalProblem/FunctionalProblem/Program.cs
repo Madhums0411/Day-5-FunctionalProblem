@@ -5,6 +5,7 @@ Console.WriteLine("Enter 1 for Flip coin");
 Console.WriteLine("Enter 2 for leap year");
 Console.WriteLine("Enter 3 for power of two");
 Console.WriteLine("Enter 4 for Hormonic number");
+Console.WriteLine("Enter 5 for Factors");
 
 
 int Problem = Convert.ToInt32(Console.ReadLine());
@@ -26,5 +27,9 @@ switch (Problem)
     case 4:
         HarmonicProblem harmonicProblem = new HarmonicProblem();
         harmonicProblem.HarmonicNumber();
+        break;
+    case 5:
+        FactorsProblem factorsProblem = new FactorsProblem();
+        factorsProblem.Factors();
         break;
 }
