@@ -9,6 +9,7 @@ Console.WriteLine("Enter 5 for Factors");
 Console.WriteLine("Enter 6 for Quotient and Remainder");
 Console.WriteLine("Enter 7 for Swap two numbers");
 Console.WriteLine("Enter 8 for Even ot Odd");
+Console.WriteLine("Enter 9 for Vowel or consonant");
 
 
 int Problem = Convert.ToInt32(Console.ReadLine());
@@ -46,5 +47,9 @@ switch (Problem)
     case 8:
         EvenorOddProblem evenorOddProblem = new EvenorOddProblem();
         evenorOddProblem.EvenOrOdd();
+        break;
+    case 9:
+        VowelConsonantProblem vowelConsonantProblem = new VowelConsonantProblem();
+        vowelConsonantProblem.CheckVowelOrConsonant();
         break;
 }
