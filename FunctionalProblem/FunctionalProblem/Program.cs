@@ -7,6 +7,7 @@ Console.WriteLine("Enter 3 for power of two");
 Console.WriteLine("Enter 4 for Hormonic number");
 Console.WriteLine("Enter 5 for Factors");
 Console.WriteLine("Enter 6 for Quotient and Remainder");
+Console.WriteLine("Enter 7 for Swap two numbers");
 
 
 int Problem = Convert.ToInt32(Console.ReadLine());
@@ -36,5 +37,9 @@ switch (Problem)
     case 6:
         QuotientRemainderProblem quotientRemainderProblem = new QuotientRemainderProblem();
         quotientRemainderProblem.QuotientAndRemainder();
+        break;
+    case 7:
+        SwappingNumberProblem swappingNumberProblem = new SwappingNumberProblem();
+        swappingNumberProblem.SwapTwoNumber();
         break;
 }
