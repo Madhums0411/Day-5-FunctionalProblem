@@ -6,6 +6,7 @@ Console.WriteLine("Enter 2 for leap year");
 Console.WriteLine("Enter 3 for power of two");
 Console.WriteLine("Enter 4 for Hormonic number");
 Console.WriteLine("Enter 5 for Factors");
+Console.WriteLine("Enter 6 for Quotient and Remainder");
 
 
 int Problem = Convert.ToInt32(Console.ReadLine());
@@ -31,5 +32,9 @@ switch (Problem)
     case 5:
         FactorsProblem factorsProblem = new FactorsProblem();
         factorsProblem.Factors();
+        break;
+    case 6:
+        QuotientRemainderProblem quotientRemainderProblem = new QuotientRemainderProblem();
+        quotientRemainderProblem.QuotientAndRemainder();
         break;
 }
