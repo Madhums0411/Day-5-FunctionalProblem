@@ -10,6 +10,7 @@ Console.WriteLine("Enter 6 for Quotient and Remainder");
 Console.WriteLine("Enter 7 for Swap two numbers");
 Console.WriteLine("Enter 8 for Even ot Odd");
 Console.WriteLine("Enter 9 for Vowel or consonant");
+Console.WriteLine("Enter 10 for Largest three numbers");
 
 
 int Problem = Convert.ToInt32(Console.ReadLine());
@@ -51,5 +52,9 @@ switch (Problem)
     case 9:
         VowelConsonantProblem vowelConsonantProblem = new VowelConsonantProblem();
         vowelConsonantProblem.CheckVowelOrConsonant();
+        break;
+    case 10:
+        LargestNumberProblem largestNumberProblem = new LargestNumberProblem();
+        largestNumberProblem.LargestNumbers();
         break;
 }
